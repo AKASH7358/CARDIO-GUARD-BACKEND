@@ -17,7 +17,7 @@ genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel("gemini-1.5-pro")
 
 # 🔹 Load the trained heart disease model
-model_path = '/Users/akash/Downloads/PROJECT WEBSITE/backend/model/heart_disease_mri_densenet_model.h5'
+model_path = 'model/heart_disease_mri_densenet_model.h5'
 heart_disease_model = tf.keras.models.load_model(model_path)
 heart_disease_model.compile(optimizer="adam", loss="categorical_crossentropy", metrics=["accuracy"])
 
